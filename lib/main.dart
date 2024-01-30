@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_porto/config/colors.dart';
+import 'package:flutter_web_porto/pages/app.dart';
 import 'package:flutter_web_porto/pages/home_page.dart';
+import 'package:flutter_web_porto/pages/not_found_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -21,7 +23,13 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           primaryColor: AppColors.primaryColor,
           textTheme: GoogleFonts.ralewayTextTheme(Theme.of(context).textTheme)),
-      home: const HomePage(),
+      routes: {
+        "/": (context) => const App(),
+      },
+      onUnknownRoute: (settings) =>
+          MaterialPageRoute(builder: (context) => const NotFoundPage()),
+
+      // home: const HomePage(),
     );
   }
 }

@@ -43,8 +43,11 @@ class AppConstants {
   ///Font Size 24px
   static const double kFontSizeX = 24.0;
 
+  ///Font Size 28px
+  static const double kFontSizeXX = 28.0;
+
   ///Font Size 32px
-  static const double kFontSizeXX = 32.0;
+  static const double kFontSizeXXX = 32.0;
 
   // Radius
   ///Radius 4px
@@ -57,7 +60,7 @@ class AppConstants {
   static const double kRadiusL = 16.0;
 
   ///Radius 32px
-  static const double kRadiusXL = 32.0;
+  static const double kRadiusXL = 20.0;
 
   // Animation
   static const Duration kPageAnimationDuration = Duration(milliseconds: 375);
